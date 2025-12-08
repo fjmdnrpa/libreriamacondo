@@ -21,9 +21,9 @@ function FormularioLibros() {
         titulo: '',
         autor: '',
         editorial: '',
-        paginas: '',
+        paginas: 0,
         sinopsis: '',
-        precio: '',
+        precio: 0,
         portada: ''
 });
  
@@ -42,7 +42,7 @@ function FormularioLibros() {
         editorial: libroRecibido.editorial || '',
         paginas: libroRecibido.paginas || 0,
         sinopsis: libroRecibido.sinopsis || '',
-        precio: libroRecibido.autor || 0,
+        precio: libroRecibido.precio || 0,
         portada: libroRecibido.portada || ''
       });
     }
