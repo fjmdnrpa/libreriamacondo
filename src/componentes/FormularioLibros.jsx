@@ -21,9 +21,9 @@ function FormularioLibros() {
         titulo: '',
         autor: '',
         editorial: '',
-        paginas: 0,
+        paginas: '',
         sinopsis: '',
-        precio: 0,
+        precio: '',
         portada: ''
 });
  
