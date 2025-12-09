@@ -40,8 +40,8 @@ export default function IniciarSesion() {
         navigate("/libros");
       }
     } else {
-      toast(
-        "Credenciales de administrador incorrectas. Usa: admin / 1234@admin"
+      toast.error(
+        "Credenciales de administrador incorrectas. Consulte la documentacion"
       );
     }
   };
