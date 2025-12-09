@@ -1,16 +1,30 @@
-# React + Vite
+El presente es un desarrollo Front-end solo con fines educativos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto: E-comerce "Libreria Macondo"
 
-Currently, two official plugins are available:
+Autor: Fernando Maisonnave
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Descripcion: Se trata de una sitio web que permite la compra de libros y 
+utiliza un carrito para ir llevando la compra.
 
-## React Compiler
+Herramientas: El sitio fue desrrollado con Vite + React utiliza boostrap 
+y otra librerias como react-tostify, styled-components, react-icons/fa
+y react-router-dom. Ademas utiliza https://mockapi.io/ para almacenar
+datos de manera remota.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Caracteristicas: El sitio permite a los usuarios comprar libros agregandolos
+a un carrito. Desde el carriro permite modificar la compra.
+Para finalizar la misma solicita un nombre de usuario y email que no se verifica.
+Solo sirve como referencia.
+En el caso del usuario "admin" se verifica que el email sea "1234@admin"
+y en caso de verficacion positiva le permite acceder a un tablero 
+desde donde puede dar de alta, modificar o dar de baja libros.
 
-## Expanding the ESLint configuration
+Aclaraciones: 
+Por ahora no se presentan los precios con "." y "," por no haber encontrado
+una forma satisfactoria.
+El usuario "admin" no puede comprar libros porque se considero que
+para hacer pruebas se deberia crear un usuario sin derechos de admin.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
