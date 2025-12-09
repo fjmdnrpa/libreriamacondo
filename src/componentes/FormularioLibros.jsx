@@ -86,7 +86,7 @@ function FormularioLibros() {
       if (modo === "agregar") {
         // Usar el contexto para agregar libro
         const nuevoLibro = await agregarLibro(libroEnviar);
-        toast(`El libro "${nuevoLibro.titulo}" fue agregado correctamente con ID: ${nuevoLibro.id}`);
+        toast.success(`El libro "${nuevoLibro.titulo}" fue agregado correctamente con ID: ${nuevoLibro.id}`);
        
         // Limpiar formulario después del éxito
         setLibro({
@@ -109,7 +109,7 @@ function FormularioLibros() {
       } else {
         // Usar el contexto para editar libro
         await editarLibro(libroEnviar);
-        toast('Libro actualizado correctamente');
+        toast.success('Libro actualizado correctamente');
 
         setTimeout(() => {
           navigate('/libros');
@@ -119,7 +119,7 @@ function FormularioLibros() {
       setErrores({});
      
     } catch (error) {
-      toast(`Hubo un problema al ${modo === "editar" ? 'actualizar' : 'agregar'} el libro`);
+      toast.error(`Hubo un problema al ${modo === "editar" ? 'actualizar' : 'agregar'} el libro`);
       console.error('Error:', error);
     } finally {
       setCargando(false);
@@ -128,7 +128,7 @@ function FormularioLibros() {
 
   const cancelarEdicion = () => {
     if (modo === "editar") {
-      toast('Edición cancelada');
+      toast.error('Edición cancelada');
       navigate('/libros');
     }
   };
